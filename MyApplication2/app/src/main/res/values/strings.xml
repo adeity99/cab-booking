@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="channel_name">ICT TRAINING</string>
+    <string name="channel_desc">ICT training 2020 Online</string>
+
+    <string-array name="my_color">
+        <item>NONE</item>
+        <item>RED</item>
+        <item>GREEN</item>
+        <item>YELLOW</item>
+        <item>GRAY</item>
+        <item>BLUE</item>
+        <item>PINK</item>
+    </string-array>
+    <string-array name="entry_color">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+</resources>

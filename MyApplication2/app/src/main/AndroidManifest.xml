@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission-sdk-23 android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="My Application"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CameraDemo2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+  <receiver android:name=".MyBroadCast">
+           <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        -->
+        <receiver android:name=".MyBroadCast" />
+        <receiver android:name=".MyCallReciver" />
+
+        <activity android:name=".CameraDemo" /> <!-- <activity android:name=".MusicActivity" /> -->
+        <activity android:name=".BlueToothDemo" />
+        <activity android:name=".WifiDemo" />
+        <activity android:name=".BroadcastTest" />
+        <activity android:name=".BroadCastDemo" />
+        <activity android:name=".WebViewDemo" />
+        <activity android:name=".SongList" /> <!-- linked with MusicPlayer -->
+        <activity android:name=".LightSensor" /> <!-- used layout of Sensorlist -->
+        <activity android:name=".TextSpeech" />
+        <activity android:name=".ProximityDemo" />
+        <activity android:name=".AccelroSensor" />
+        <activity android:name=".SensorList" />
+        <activity android:name=".DataBaseDemo" />
+        <activity android:name=".FileDemo" />
+        <activity android:name=".ActivityLifeCycle" />
+        <activity android:name=".CalCulation" />
+        <activity android:name=".PreferenceFromJava" />
+        <activity android:name=".PreferenceFromXML" />
+        <activity android:name=".ActivityForResult" />
+        <activity android:name=".NotificationDemo" /> <!-- linked with Result.java -->
+        <activity android:name=".ContextDemo" />
+        <activity android:name=".ProgressBardemo" />
+        <activity android:name=".OptionDemo" />
+        <activity android:name=".Radiodemo" />
+        <activity android:name=".Jumbledword" />
+        <activity android:name=".SpinnerDemo" />
+        <activity android:name=".CounterActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".HideandSeek" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SeekBardemo" />
+        <activity android:name=".MusicPlayer" />
+        <activity android:name=".ActivityResult" />
+        <activity android:name=".Result" />
+    </application>
+
+</manifest>

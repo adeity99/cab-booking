@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4D148"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".HideandSeek"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="WELCOME IN IIT KANPUR"
+        android:textAlignment="center"
+        android:textColor="#227DC6"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/snh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="#9C27B0"
+        android:text="SHOW MEASSAGE"
+        android:textAlignment="center"
+        android:textColor="#FBF9F9"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+</LinearLayout>
